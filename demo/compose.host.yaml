@@ -8,4 +8,4 @@ services:
     image: husarion/omping
     network_mode: host
     tty: true
-    command: ${ HOST_IP_1 } { HOST_IP_2 } 
+    command: ${HOST_IP_1} ${HOST_IP_2} 
