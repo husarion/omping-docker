@@ -1,0 +1,11 @@
+services:
+
+  node1:
+    build: .
+    tty: true
+    command: /omping/omping node1 node2
+
+  node2:
+    build: .
+    tty: true
+    command: /omping/omping node1 node2
