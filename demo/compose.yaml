@@ -1,0 +1,11 @@
+# You can use husarion/omping in your compose setup:
+# 1. add HOST_IP_1 and HOST_IP_1 ip addresses to the .env file
+# 2. copy the omping service to your compose file
+
+services:
+
+  omping:
+    image: husarion/omping
+    network_mode: host
+    tty: true
+    command: ${ HOST_IP_1 } { HOST_IP_2 } 

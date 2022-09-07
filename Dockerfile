@@ -11,3 +11,5 @@ RUN apt update && apt install -y \
     apt autoremove -y && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
+
+ENTRYPOINT [ "omping" ] 
