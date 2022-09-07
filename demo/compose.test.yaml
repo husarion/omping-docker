@@ -1,0 +1,17 @@
+# just for local testing on a single host
+#
+# docker compose -f compose.test.yaml up
+
+services:
+
+  node1:
+    build:
+      context: ..
+    tty: true
+    command: node1 node2
+
+  node2:
+    build:
+      context: ..
+    tty: true
+    command: node1 node2
