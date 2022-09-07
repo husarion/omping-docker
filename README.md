@@ -12,7 +12,7 @@ To check whether multicasting connectivity works between two hosts run:
 docker run --rm -it --net host husarion/omping 172.20.10.2 172.20.10.3
 ```
 
-where `172.20.10.2` and `172.20.10.3` are addresses of the hosts (replace by yours).
+where `172.20.10.2` and `172.20.10.3` are addresses of the hosts (replace by your hosts IP addresses).
 
 ## Output
 
