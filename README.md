@@ -1,5 +1,8 @@
 # omping-docker
+
 Dockerized Multicasting diagnostic tool - useful for debugging connectivity issues with ROS 2
+
+[![Build/Publish Docker Image](https://github.com/husarion/omping-docker/actions/workflows/build.yaml/badge.svg)](https://github.com/husarion/omping-docker/actions/workflows/build.yaml)
 
 ## Quick start
 
@@ -30,7 +33,7 @@ $ docker run --rm -it --net host husarion/omping omping 172.20.10.2 172.20.10.3
 172.20.10.2 :   unicast, seq=5, size=69 bytes, dist=0, time=11.433ms
 ```
 
-### No multicasting output
+### Broken multicasting output
 
 ```
 $ docker run --rm -it --net host husarion/omping omping 172.20.10.2 172.20.10.3
